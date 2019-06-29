@@ -1,11 +1,11 @@
-import { Component } from "@angular/core";
-import { QuestionsService } from "./questions.service";
-import { Quiz, Answers, Choice } from "./quiz.model";
+import { Component } from '@angular/core';
+import { QuestionsService } from './services/questions.service';
+import { Quiz, Answers, Choice } from './models/quiz.model';
 
 @Component({
-  selector: "app-root",
-  templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.scss"]
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   private answers: Answers;
@@ -14,8 +14,8 @@ export class AppComponent {
   private showResults = false;
 
   constructor(private questionsService: QuestionsService) {
-    this.questionsService.getJSON("bitcoin").subscribe(data => {
-      this.quiz = new Quiz("bitcoin", data);
+    this.questionsService.getJSON('bitcoin').subscribe(data => {
+      this.quiz = new Quiz('bitcoin', data);
       this.answers = new Answers();
       this.currentQuestionIndex = 0;
     });
