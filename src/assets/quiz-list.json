@@ -1,0 +1,20 @@
+[
+  {
+    "label": "Easy",
+    "name": "easy",
+    "description": "Test your knowledge on the basics about bitcoin",
+    "filename": "btc-easy.json"
+  },
+  {
+    "label": "Intermediate",
+    "name": "intermediate",
+    "description": "A more in depth quiz on bitcoin",
+    "filename": "btc-medium.json"
+  },
+  {
+    "label": "Expert",
+    "name": "expert",
+    "description": "Think you know you're a bitcoin expert?",
+    "filename": "btc-expert.json"
+  }
+]
