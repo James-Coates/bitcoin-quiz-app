@@ -1,0 +1,6 @@
+<div class="results">
+  <h2>Results</h2>
+  <div class="answers" *ngFor="let a of answers.value" ngClass="{correct: answer.correct}">
+    {{ a.value }}
+  </div>
+</div>
