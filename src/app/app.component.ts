@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { QuestionsService } from './services/questions.service';
 import { Quiz, Answers, Choice } from './models/quiz.model';
 
@@ -7,30 +7,7 @@ import { Quiz, Answers, Choice } from './models/quiz.model';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+@NgModule()
 export class AppComponent {
-  private answers: Answers;
-  private quiz: Quiz;
-  private currentQuestionIndex: number;
-  private showResults = false;
-
-  constructor(private questionsService: QuestionsService) {
-    this.questionsService.getJSON('bitcoin').subscribe(data => {
-      this.quiz = new Quiz('bitcoin', data);
-      this.answers = new Answers();
-      this.currentQuestionIndex = 0;
-    });
-  }
-
-  updateChoice(choice: Choice) {
-    this.answers.values[this.currentQuestionIndex] = choice;
-  }
-
-  nextOrViewResults() {
-    if (this.currentQuestionIndex === this.quiz.questions.length - 1) {
-      this.showResults = true;
-      return;
-    }
-
-    this.currentQuestionIndex++;
-  }
+  constructor() {}
 }
