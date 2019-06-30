@@ -1,6 +1,13 @@
 <div class="results">
   <h2>Results</h2>
-  <div class="answers" *ngFor="let a of answers.value" ngClass="{correct: answer.correct}">
+  <div
+    class="answers"
+    *ngFor="let a of answers.values"
+    [ngClass]="{ correct: a.correct }"
+  >
     {{ a.value }}
   </div>
+  <a [routerLink]="['/', 'welcome']" class="btn btn-primary"
+    >Choose another quiz</a
+  >
 </div>
