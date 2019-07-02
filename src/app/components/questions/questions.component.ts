@@ -10,14 +10,14 @@ import { QuestionsService } from '../../services/questions.service';
   styleUrls: ['./questions.component.scss']
 })
 export class QuestionsComponent implements OnInit {
-  private answers: Answers;
+  public answers: Answers;
   public quiz: Quiz;
   public questions: Question[];
-  private currentQuestionIndex: number;
-  private showResults = false;
+  public currentQuestionIndex: number;
+  public showResults = false;
 
   // Inject the active route and questions service
-  constructor(private route: ActivatedRoute, private questionsService: QuestionsService) {}
+  constructor(public route: ActivatedRoute, public questionsService: QuestionsService) {}
 
   ngOnInit() {
     this.questionsService.getQuestions(this.route.snapshot.params.quizId).subscribe(questions => {
