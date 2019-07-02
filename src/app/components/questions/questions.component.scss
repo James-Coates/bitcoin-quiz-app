@@ -1,0 +1,9 @@
+.quiz {
+  padding-top: 50px;
+  max-width: 800px;
+  padding-bottom: 80px;
+
+  @media all and (max-width: 576px) {
+    padding-top: 20px;
+  }
+}

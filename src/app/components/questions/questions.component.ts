@@ -17,19 +17,14 @@ export class QuestionsComponent implements OnInit {
   private showResults = false;
 
   // Inject the active route and questions service
-  constructor(
-    private route: ActivatedRoute,
-    private questionsService: QuestionsService
-  ) {}
+  constructor(private route: ActivatedRoute, private questionsService: QuestionsService) {}
 
   ngOnInit() {
-    this.questionsService
-      .getQuestions(this.route.snapshot.params.quizId)
-      .subscribe(questions => {
-        this.questions = questions;
-        this.answers = new Answers();
-        this.currentQuestionIndex = 0;
-      });
+    this.questionsService.getQuestions(this.route.snapshot.params.quizId).subscribe(questions => {
+      this.questions = questions;
+      this.answers = new Answers();
+      this.currentQuestionIndex = 0;
+    });
   }
 
   updateChoice(choice: Choice) {
