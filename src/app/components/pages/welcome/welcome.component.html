@@ -1,15 +1,24 @@
 <div class="welcome">
-  <h1>Welcome</h1>
-  <div class="quiz-list">
-    <div class="quiz card" *ngFor="let quiz of quizList">
-      <div class="card-body">
-        <h5 class="card-title">{{ quiz.label }}</h5>
-        <p class="card-text">
-          {{ quiz.description }}
-        </p>
-        <a href="#" class="btn btn-primary" [routerLink]="['/', quiz.fileName]"
-          >Start {{ quiz.label }} Quiz</a
-        >
+  <div class="jumbotron jumbotron-fluid jumbotron-welcome">
+    <div class="container text-center">
+      <h1 class="display-4">Welcome to the Bitcoin Quiz App!</h1>
+      <p class="lead">Test your bitcoin knowledge with one of the quizes below.</p>
+    </div>
+  </div>
+  <div class="quiz-list container">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let quiz of quizList">
+        <div class="quiz card">
+          <div class="card-body">
+            <h5 class="card-title">{{ quiz.label }}</h5>
+            <p class="card-text">
+              {{ quiz.description }}
+            </p>
+            <a href="#" class="btn btn-primary card-btn" [routerLink]="['/', quiz.fileName]"
+              >Start {{ quiz.label }} Quiz</a
+            >
+          </div>
+        </div>
       </div>
     </div>
   </div>
