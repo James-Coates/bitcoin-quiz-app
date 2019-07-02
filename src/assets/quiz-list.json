@@ -3,18 +3,18 @@
     "label": "Easy",
     "name": "easy",
     "description": "Test your knowledge on the basics about bitcoin",
-    "filename": "btc-easy.json"
+    "filename": "btc-easy"
   },
   {
     "label": "Intermediate",
     "name": "intermediate",
     "description": "A more in depth quiz on bitcoin",
-    "filename": "btc-medium.json"
+    "filename": "btc-intermediate"
   },
   {
     "label": "Expert",
     "name": "expert",
     "description": "Think you know you're a bitcoin expert?",
-    "filename": "btc-expert.json"
+    "filename": "btc-expert"
   }
 ]
