@@ -12,15 +12,13 @@ export class QuestionsService {
   public getQuizzes() {
     return this.http.get('../../assets/quiz-list.json').pipe(
       map((result: any[]) => {
-        return result.map(
-          r => new Quiz(r.label, r.name, r.description, r.filename)
-        );
+        return result.map(r => new Quiz(r.label, r.name, r.description, r.filename));
       })
     );
   }
 
   public getQuestions(fileName: string) {
-    return this.http.get(`../assets/${fileName}`).pipe(
+    return this.http.get(`../assets/${fileName}.json`).pipe(
       map((result: any[]) => {
         return result.map(r => new Question(r.label, r.choices));
       })
