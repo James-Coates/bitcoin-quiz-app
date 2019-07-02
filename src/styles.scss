@@ -1,2 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+$color-black: #424242;
+$color-gray: #e2e2e2;
+$color-primary: #ff8001;
+$color-primary-light: lighten($color-primary, 20);
+$color-primary-dark: darken($color-primary, 10);
+$color-primary-darker: darken($color-primary, 20);
+$color-correct: #4cd58a;
+$color-incorrect: #ff5a79;
+
+body {
+  color: $color-black;
+}
+
+.btn-primary {
+  background-color: $color-primary;
+  border: darken($color-primary, $amount: 10);
+
+  &:hover,
+  &:focus {
+    background-color: $color-primary-dark;
+  }
+  &:active {
+    background-color: $color-primary-darker;
+  }
+  &:disabled {
+    background-color: $color-primary-light;
+  }
+}
