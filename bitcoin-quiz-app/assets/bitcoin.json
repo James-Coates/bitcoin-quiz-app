@@ -1,0 +1,65 @@
+[
+  {
+    "label": "How many bitcoins can ever exist?",
+    "choices": [
+      {
+        "value": "20 million",
+        "correct": false
+      },
+      {
+        "value": "21 million",
+        "correct": true
+      },
+      {
+        "value": "84 million",
+        "correct": false
+      },
+      {
+        "value": "100 thousand",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "label": "What is a Bitcoin wallet?",
+    "choices": [
+      {
+        "value": "It's a flash drive with a special key on it",
+        "correct": false
+      },
+      {
+        "value": "A software that can receive and send Bitcoin transactions and store your private keys",
+        "correct": true
+      },
+      {
+        "value": "It's a Bitcoin address",
+        "correct": false
+      },
+      {
+        "value": "A database of all transactions made to your address",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "label": "Who invented Bitcoin?",
+    "choices": [
+      {
+        "value": "A group of researchers from MIT",
+        "correct": false
+      },
+      {
+        "value": "The CIA",
+        "correct": false
+      },
+      {
+        "value": "An anonymous person who took the pseudonym of Satoshi Nakamoto",
+        "correct": true
+      },
+      {
+        "value": "Paypal founders",
+        "correct": false
+      }
+    ]
+  }
+]
