@@ -1,3 +1,32 @@
+@import "../../../styles.scss";
+
 .correct {
-  color: green;
+  color: $color-correct;
+}
+
+.incorrect {
+  color: $color-incorrect;
+}
+
+.question-answer {
+  border-bottom: 1px solid $color-gray;
+  margin-bottom: 10px;
+
+  &:last-of-type {
+    margin-bottom: 30px;
+    border-bottom: 0;
+  }
+}
+
+.results {
+  &__header {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+  &__question {
+    font-size: 22px;
+  }
+  // &__answer {
+  //   font-size: 18px;
+  // }
 }

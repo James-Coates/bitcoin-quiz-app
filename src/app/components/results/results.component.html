@@ -1,13 +1,16 @@
 <div class="results">
-  <h2>Results</h2>
-  <div
-    class="answers"
-    *ngFor="let a of answers.values"
-    [ngClass]="{ correct: a.correct }"
-  >
-    {{ a.value }}
+  <h1 class="results__header">Results</h1>
+  <div class="question-answer" *ngFor="let qa of questionAnswers">
+    <div class="results__question">
+      <p>Q: {{ qa.q }}</p>
+    </div>
+    <div class="results__answer" [ngClass]="qa.a.correct ? 'correct' : 'incorrect'">
+      <p>
+        <fa-icon *ngIf="qa.a.correct" [icon]="faCheckCircle"></fa-icon>
+        <fa-icon *ngIf="!qa.a.correct" [icon]="faTimesCircle"></fa-icon>
+        {{ qa.a.value }}
+      </p>
+    </div>
   </div>
-  <a [routerLink]="['/', 'welcome']" class="btn btn-primary"
-    >Choose another quiz</a
-  >
+  <a [routerLink]="['/', 'welcome']" class="btn btn-primary">Choose another quiz</a>
 </div>
