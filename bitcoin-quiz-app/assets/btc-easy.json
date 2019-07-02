@@ -1,0 +1,107 @@
+[
+  {
+    "label": "Who created bitcoin?",
+    "choices": [
+      {
+        "value": "Vitalik Buterin",
+        "correct": false
+      },
+      {
+        "value": "Gavin Andresen",
+        "correct": false
+      },
+      {
+        "value": "Satoshi Nakamoto",
+        "correct": true
+      },
+      {
+        "value": "Charlie Lee",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "label": "What is the original document that proposed Bitcoin, considered by many in the space to be a “must read”?",
+    "choices": [
+      {
+        "value": "The Bitcoin White Paper",
+        "correct": true
+      },
+      {
+        "value": "The Golden Proposal",
+        "correct": false
+      },
+      {
+        "value": "The Bitcoin Manifesto",
+        "correct": false
+      },
+      {
+        "value": "E-Money: Bitcoin and the Blockchain",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "label": "What is the name of the bitcoin exchange from Japan that famously collapsed in 2014 due to a devastating hack?",
+    "choices": [
+      {
+        "value": "Tradehill",
+        "correct": false
+      },
+      {
+        "value": "Bitstamp",
+        "correct": false
+      },
+      {
+        "value": "Blockchain.info",
+        "correct": false
+      },
+      {
+        "value": "Mt. Gox",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "label": "How many bitcoin will ever be created?",
+    "choices": [
+      {
+        "value": "77,340,109",
+        "correct": false
+      },
+      {
+        "value": "3,500,000",
+        "correct": false
+      },
+      {
+        "value": "21,000,000",
+        "correct": true
+      },
+      {
+        "value": "Unlimited",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "label": "What is the name of the off-chain scaling solution that is being developed to mitigate bitcoin’s fees and long transaction times?",
+    "choices": [
+      {
+        "value": "Second Layer Network",
+        "correct": false
+      },
+      {
+        "value": "Lightning Network",
+        "correct": true
+      },
+      {
+        "value": "Quick Net",
+        "correct": false
+      },
+      {
+        "value": "The Bitcoin Payment Network",
+        "correct": false
+      }
+    ]
+  }
+]
