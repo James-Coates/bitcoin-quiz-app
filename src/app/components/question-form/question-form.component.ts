@@ -9,6 +9,7 @@ import { Question } from '../../models/quiz.model';
 })
 export class QuestionFormComponent implements OnInit {
   @Input() question: Question;
+  @Input() currentQuestionIndex: number;
   @Output() onChoiceMade = new EventEmitter<string>();
 
   private form: FormGroup;
@@ -17,7 +18,7 @@ export class QuestionFormComponent implements OnInit {
     this.form = new FormGroup({
       choice: new FormControl()
     });
-
+    console.log(this.currentQuestionIndex);
     this.form.valueChanges.subscribe(this.onChange);
   }
 
