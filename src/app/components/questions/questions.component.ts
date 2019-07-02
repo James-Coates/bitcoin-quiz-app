@@ -11,8 +11,8 @@ import { QuestionsService } from '../../services/questions.service';
 })
 export class QuestionsComponent implements OnInit {
   private answers: Answers;
-  private quiz: Quiz;
-  private questions: Question[];
+  public quiz: Quiz;
+  public questions: Question[];
   private currentQuestionIndex: number;
   private showResults = false;
 

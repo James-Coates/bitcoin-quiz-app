@@ -9,7 +9,7 @@ import { Quiz } from 'src/app/models/quiz.model';
   styleUrls: ['./welcome.component.scss']
 })
 export class WelcomeComponent implements OnInit {
-  private quizList: Quiz[];
+  public quizList: Quiz[];
 
   constructor(private questionsService: QuestionsService) {
     this.questionsService.getQuizzes().subscribe(data => {
